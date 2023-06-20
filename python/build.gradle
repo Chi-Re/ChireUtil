@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+sourceSets.main.java.srcDirs = ["src"]
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = "$groupName"+"." + rootProject.name
+            artifactId = 'python'
+            version = "$Version"
+            from components.java
+        }
+    }
+}
+
+dependencies {
+    repositories{
+        mavenCentral()
+        maven{ url 'https://www.jitpack.io' }
+    }
+
+    implementation 'org.python:jython-standalone:2.7.2'
+}
