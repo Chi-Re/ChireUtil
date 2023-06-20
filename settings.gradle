@@ -1,0 +1,3 @@
+rootProject.name = 'ChireUtil'
+
+include 'core'

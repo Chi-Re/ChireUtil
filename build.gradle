@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '2.0.4'
+}
+
+ext {
+    //将Chi-Re改成你的用户名
+    groupName = 'com.github.Chi-Re'
+    //版本请和Releases发布的保持一致
+    Version = '1.0.0'
+}
+
+group "$groupName"
+version "$Version"
+
+dependencies {
+    repositories {
+        mavenCentral()
+        maven{ url 'https://www.jitpack.io' }
+    }
+
+    //这里引用后可以让ext的变量能被使用
+    implementation project(":core")
+}
