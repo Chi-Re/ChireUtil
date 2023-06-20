@@ -24,3 +24,7 @@ dependencies {
     implementation project(":core")
     implementation project(":python")
 }
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
