@@ -1,6 +1,6 @@
 package chireutil.util;
 
-public class Core {
+public class ChireCore {
     public static void core(){
 
     }
