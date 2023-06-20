@@ -3,7 +3,7 @@ plugins {
     id 'maven-publish'
 }
 
-sourceSets.main.java.srcDirs = ["src/main/java"]
+sourceSets.main.java.srcDirs = ["src"]
 
 publishing {
     publications {
