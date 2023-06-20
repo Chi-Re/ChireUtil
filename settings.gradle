@@ -1,4 +1,3 @@
 rootProject.name = 'ChireUtil'
 
-include 'core'
-include 'python'
+include 'core', 'python', 'mindustry'

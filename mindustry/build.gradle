@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+sourceSets.main.java.srcDirs = ["src"]
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.github.Chi-Re.ChireUtil'
+            artifactId = 'mindustry'
+            version = "$Version"
+            from components.java
+        }
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+dependencies {
+    repositories{
+        mavenCentral()
+        maven{ url 'https://www.jitpack.io' }
+    }
+
+    compileOnly "com.github.Anuken.Arc:arc-core:$mindustryVersion"
+    compileOnly "com.github.Anuken.Mindustry:core:$mindustryVersion"
+}

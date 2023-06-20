@@ -8,6 +8,7 @@ ext {
     groupName = 'com.github.Chi-Re'
     //版本请和Releases发布的保持一致
     Version = '1.0.2'
+    mindustryVersion = 'v141.2'
 }
 
 group "$groupName"
