@@ -21,4 +21,5 @@ dependencies {
 
     //这里引用后可以让ext的变量能被使用
     implementation project(":core")
+    implementation project(":python")
 }
