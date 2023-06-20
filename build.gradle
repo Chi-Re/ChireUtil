@@ -7,7 +7,7 @@ ext {
     //将Chi-Re改成你的用户名
     groupName = 'com.github.Chi-Re'
     //版本请和Releases发布的保持一致
-    Version = '1.0.1'
+    Version = '1.0.2'
 }
 
 group "$groupName"
